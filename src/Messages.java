@@ -2,24 +2,12 @@ public class Messages {
 
     public static void printWelcomeMessage(){
         System.out.println("The Engine welcomes you");
-
-        try{
-            Thread.sleep(500);
-        }catch (Exception ex){
-            ex.printStackTrace();
-        }
+        sleep(500);
         System.out.print(".");
-        try{
-            Thread.sleep(500);
-        }catch (Exception ex){
-            ex.printStackTrace();
-        }
+        sleep(500);
         System.out.print(".");
-        try{
-            Thread.sleep(500);
-        }catch (Exception ex){
-            ex.printStackTrace();
-        }System.out.print(".\n");
+        sleep(500);
+        System.out.print(".\n");
 
     }
 
@@ -29,5 +17,14 @@ public class Messages {
 
     public static void printEndMessage(){
         System.out.println("\n\nGoodbye Master");
+    }
+
+    static private void sleep(int ns){
+
+        try{
+            Thread.sleep(500);
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
 }
