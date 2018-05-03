@@ -11,6 +11,12 @@ public class core {
         int n = sc.nextInt();
         System.out.println("\nYour Input was " + n);
         //
+        switch(n){
+            case 1:
+
+                break;
+
+        }
 
 
         Messages.printEndMessage();
