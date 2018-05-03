@@ -1,7 +1,11 @@
 import java.util.Scanner;
+
+
 public class core {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+
 
         Messages.printWelcomeMessage();
         Messages.printAvailableFuntions();
@@ -13,6 +17,10 @@ public class core {
         //
         switch(n){
             case 1:
+                ThreeColorSort test = new ThreeColorSort();
+                for (int e:test.sortColors()) {
+                    System.out.println(e + " ");
+                }
 
                 break;
 
